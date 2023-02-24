@@ -1,0 +1,262 @@
+
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-top: 15px;
+    background-image: url(images/fon1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+}
+a:link, a:visited { color: #FFFFFF; text-decoration: none; font-weight: normal; } 
+a:active, a:hover { color: #99FF00; text-decoration: underline; }
+.header {
+    width: 100%;
+    height: auto;
+    font-size: 12px;
+    margin: auto;
+}
+/* контент в шапке */
+.logo {
+    float: left;
+}
+
+.nazvanie {
+    margin-left: 10px;
+    float: left;
+}
+
+.contacts {
+    float: right;
+    margin: auto;
+    padding-top: 0px;
+}
+
+.rainbow {
+    background: linear-gradient(to right, red, orange, yellow, green, cyan, blue, violet);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 40px;
+    line-height: 40px;
+    background-size: 400% 400%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-animation: rainbow 16s ease infinite;
+    animation: rainbow 16s ease infinite;
+    font-size: 38px;
+    line-height: 25px;
+}
+ 
+@-webkit-keyframes rainbow {
+  0% { background-position: 0% 50% }
+  50% { background-position: 100% 50% }
+  100% { background-position: 0% 50% }
+}
+ 
+@keyframes rainbow {
+  0% { background-position: 0% 50% }
+  50% { background-position: 100% 50% }
+  100% { background-position: 0% 50% }
+}
+.rainbow_2 {
+    background: linear-gradient(to right, red, orange, yellow, green, cyan, blue, violet);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 40px;
+    line-height: 40px;
+    background-size: 400% 400%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-animation: rainbow 16s ease infinite;
+    animation: rainbow 16s ease infinite;
+    font-size: 30px;
+    line-height: 25px;
+    margin-right: 45px; 
+    margin-top: 0px;
+}
+ 
+@-webkit-keyframes rainbow {
+  0% { background-position: 0% 50% }
+  50% { background-position: 100% 50% }
+  100% { background-position: 0% 50% }
+}
+ 
+@keyframes rainbow {
+  0% { background-position: 0% 50% }
+  50% { background-position: 100% 50% }
+  100% { background-position: 0% 50% }
+}
+.nazvanie_table {
+    margin: auto;
+}
+.contakti_table {
+    margin: auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.naz_oglav {
+    width: 100%;
+    height: 75px;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 100px;
+     
+}
+.naz {
+    width: 70%;
+    height: auto;
+    margin-top: 25px; 
+    margin-bottom: 15px; 
+    margin-left: 10px;
+    
+}
+.oglav {
+    width: 30%;
+    height: auto;
+    margin-top: 25px;  
+    margin-bottom: 15px;
+}
+.position_block {
+    width: 100%;
+    height: 250px;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 50px;
+    
+}
+.side_bar {
+    text-align: right;
+    width: 30%;
+    height: 250px;
+    margin-top: 75px;
+    margin-bottom: 50px;
+}
+.text_side_bar {
+    margin-right: 145px; 
+    margin-top: 10px;
+    font-size: larger;
+}
+.content {
+    width: 70%;
+    height: 250px;
+    margin-top: 75px;
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: row;
+}
+.conten_poz_1 {
+    width: 50%;
+    height: auto;
+    margin-bottom: 50px;
+}
+.conten_poz_2 {
+    width: 50%;
+    height: auto;
+    margin-bottom: 50px;
+}
+
+
+
+
+
+
+/* оверлей */
+#overlay {
+    position: absolute;
+    top: 22px;
+    right: 280px;
+    -webkit-animation: fade .3s;
+    -moz-animation: fade .3s;
+    animation: fade .3s;
+    
+}
+
+.close {
+    top: 8px;
+    right: 8px;
+    width: 32px;
+    height: 32px;
+    position: absolute;
+    border: none;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.9);
+    -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+    -moz-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+    cursor: pointer;
+    outline: none;
+}
+.close:before {
+    color: rgba(255, 255, 255, 0.9);
+    content: "X";
+    font-family:  Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: normal;
+    text-decoration: none;
+    text-shadow: 0 -1px rgba(0, 0, 0, 0.9);
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    transition: all 0.5s;
+}
+
+.close:hover {
+    background-color: rgba(252, 20, 0, 0.8);
+}
+/* о нас */
+#o_nas_1{
+    position: absolute;
+    top: 38%;
+    right: 38%;
+    padding: 25px;
+    text-align: center;
+    background-color: black;
+    width: 350px;
+    height: 350px;
+    -webkit-animation: fade .3s;
+    -moz-animation: fade .3s;
+    animation: fade .3s;
+    display: none;
+}
+/* подсказка */
+#tlt {
+    position: relative; /* Относительное позиционирование */ 
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+  }
+  #tlt::after {
+    content: attr(data-tooltip); /* Выводим текст */
+    position: absolute; /* Абсолютное позиционирование */
+    width: auto; /* Ширина подсказки */
+    left: 0; top: 0; /* Положение подсказки */
+    color: white; /* Цвет текста */
+    padding: 0.5em; /* Поля вокруг текста */
+    background-color: black;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Параметры тени */
+    pointer-events: none; /* Подсказка */
+    opacity: 0; /* Подсказка невидима */
+    transition: 0.5s; /* Время появления подсказки */
+    text-indent: 0px;
+  } 
+  #tlt:hover::after {
+    opacity: 1; /* Показываем подсказку */
+    top: 2em; /* Положение подсказки */
+  }
+/* 
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+*/
